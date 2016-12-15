@@ -1,0 +1,12 @@
+---
+#系统信息
+name: spring-cloud-demo-development
+version: 1.0
+developers:
+  -mahq
+  -shencg
+  -wult
+use:
+technology:
+  jdk: 1.7
+  spring-cloud: 1.3
