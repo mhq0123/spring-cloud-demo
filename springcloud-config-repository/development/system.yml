@@ -1,4 +1,4 @@
-#系统信息
+#系统信息yml
 system:
   name: spring-cloud-demo-development
   version: 1.0
