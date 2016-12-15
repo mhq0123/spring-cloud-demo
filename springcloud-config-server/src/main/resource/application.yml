@@ -8,6 +8,8 @@ spring:
   cloud:
     config:
       server:
+        health:
+          enabled: true
         #配置仓库地址
         git:
           uri: https://github.com/mhq0123/spring-cloud-demo.git
@@ -27,4 +29,8 @@ spring:
 #              - */local-b*
 #              - */local-b/*
 #            uri: file:/home/config-repo/local-b/
-
+security:
+  user:
+    role: whole
+    name: user
+    password: 123456
