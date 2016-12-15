@@ -1,13 +1,30 @@
+#记得要设置本目录为资源配置目录
+server:
+  #服务端口
+  port: 8888
 spring:
   application:
     name: springcloud-config-server
   cloud:
     config:
       server:
+        #配置仓库地址
         git:
           uri: https://github.com/mhq0123/spring-cloud-demo.git
-          searchPaths: springcloud-config-repository/*
+          #{application} 动态搜索
+          searchPaths: springcloud-config-repository/{application}
+          #启动时是否clone
           cloneOnStart: true
+        #多仓库配置
+#        repos:
+#          local-a:
+#            pattern:
+#              - */local-a*
+#              - */local-a/*
+#            uri: file:/home/config-repo/local-a/
+#          local-b:
+#            pattern:
+#              - */local-b*
+#              - */local-b/*
+#            uri: file:/home/config-repo/local-b/
 
-server:
-  port: 8888
