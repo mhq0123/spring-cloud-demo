@@ -14,9 +14,9 @@ spring:
         git:
           uri: https://github.com/mhq0123/spring-cloud-demo.git
           #{application} 动态搜索
-          searchPaths: springcloud-config-repository/{application}
+          search-paths: springcloud-config-repository/{application}
           #启动时是否clone
-          cloneOnStart: true
+          clone-on-start: true
         #多仓库配置
 #        repos:
 #          local-a:
@@ -29,6 +29,8 @@ spring:
 #              - */local-b*
 #              - */local-b/*
 #            uri: file:/home/config-repo/local-b/
+
+#开启用户名密码验证
 security:
   user:
     role: whole

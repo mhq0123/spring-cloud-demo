@@ -11,6 +11,7 @@
 
     <modules>
         <module>springcloud-config-server</module>
+        <module>springcloud-eureka-server</module>
     </modules>
 
 
@@ -21,8 +22,9 @@
         <java.version>1.8</java.version>
 
         <!--jars-->
-        <version.org.springframework.cloud.config>1.2.2.RELEASE</version.org.springframework.cloud.config>
         <version.org.springframework.boot.starter>1.4.2.RELEASE</version.org.springframework.boot.starter>
+        <version.org.springframework.cloud.config>1.2.2.RELEASE</version.org.springframework.cloud.config>
+        <version.org.springframework.cloud.netflix>1.2.3.RELEASE</version.org.springframework.cloud.netflix>
         <!--plugs-->
         <version.org.springframework.boot.maven>1.4.2.RELEASE</version.org.springframework.boot.maven>
     </properties>
