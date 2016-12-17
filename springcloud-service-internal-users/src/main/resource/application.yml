@@ -1,6 +1,6 @@
 #记得要设置本目录为资源配置目录
 server:
-  port: 8121
+  port: 8122
 
 spring:
   application:

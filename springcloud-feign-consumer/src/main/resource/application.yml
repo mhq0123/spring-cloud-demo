@@ -1,10 +1,10 @@
 #记得要设置本目录为资源配置目录
 server:
-  port: 8112
+  port: 8333
 
 spring:
   application:
-    name: springcloud-service-external-users
+    name: springcloud-feign-consumer
 
 eureka:
   client:
