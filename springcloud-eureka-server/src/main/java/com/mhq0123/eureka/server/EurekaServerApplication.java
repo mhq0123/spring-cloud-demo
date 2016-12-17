@@ -1,4 +1,4 @@
-package com.mhq0123.demo.springcloud.eureka.server;
+package com.mhq0123.eureka.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

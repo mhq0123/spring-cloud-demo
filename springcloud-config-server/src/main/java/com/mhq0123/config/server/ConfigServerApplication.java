@@ -1,4 +1,4 @@
-package com.mhq0123.demo.springcloud.config.server;
+package com.mhq0123.config.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
