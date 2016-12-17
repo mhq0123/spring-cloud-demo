@@ -11,3 +11,6 @@ eureka:
     service-url:
       #注册服务地址
       default-zone: http://localhost:8761/eureka/
+
+logging:
+  config: classpath:logback.xml

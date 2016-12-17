@@ -11,7 +11,7 @@ spring-cloud-demo
 6.  springcloud-service-external-users   外部用户服务
 7.  springcloud-hystrix                  服务熔断器
 8.  springcloud-eureka-server            服务注册中心
-9.  springcloud-ribbon                   客户端负载均衡
+9.  springcloud-ribbon-consumer          客户端负载均衡
 10. springcloud-zuul                     路由网关
 11. springcloud-feign                    http客户端
 
