@@ -7,10 +7,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springcloud-eureka-server</artifactId>
+    <artifactId>springcloud-service-internal-users</artifactId>
     <packaging>jar</packaging>
 
-    <name>springcloud-eureka-server</name>
+    <name>springcloud-service-internal-users</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -41,13 +41,24 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <version>${version.org.springframework.boot}</version>
             <scope>test</scope>
+        </dependency>
+        <!--TODO 服务启动需要引入这两个包fasterxml.jackson-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>${version.com.fasterxml.jackson}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>${version.com.fasterxml.jackson}</version>
         </dependency>
     </dependencies>
 

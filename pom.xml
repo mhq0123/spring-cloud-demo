@@ -12,6 +12,8 @@
     <modules>
         <module>springcloud-config-server</module>
         <module>springcloud-eureka-server</module>
+        <module>springcloud-service-internal-users</module>
+        <module>springcloud-service-external-users</module>
     </modules>
 
 
@@ -19,14 +21,16 @@
         <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.release.version>1.0-SNAPSHOT</project.release.version>
+        <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <java.version>1.8</java.version>
 
         <!--jars-->
-        <version.org.springframework.boot.starter>1.4.2.RELEASE</version.org.springframework.boot.starter>
-        <version.org.springframework.cloud.config>1.2.2.RELEASE</version.org.springframework.cloud.config>
-        <version.org.springframework.cloud.netflix>1.2.3.RELEASE</version.org.springframework.cloud.netflix>
+        <version.org.springframework.boot>1.4.2.RELEASE</version.org.springframework.boot>
+        <version.org.springframework.cloud>Camden.SR3</version.org.springframework.cloud>
+        <version.com.fasterxml.jackson>2.8.5</version.com.fasterxml.jackson>
         <!--plugs-->
-        <version.org.springframework.boot.maven>1.4.2.RELEASE</version.org.springframework.boot.maven>
     </properties>
 
 </project>
