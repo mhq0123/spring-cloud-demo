@@ -6,11 +6,12 @@ spring:
   application:
     name: springcloud-service-external-users
 
+#注册服务
 eureka:
   client:
     service-url:
-      #注册服务地址
       default-zone: http://localhost:8761/eureka/
 
+#日志
 logging:
   config: classpath:logback.xml

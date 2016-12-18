@@ -32,6 +32,7 @@
         <version.org.springframework.boot>1.4.2.RELEASE</version.org.springframework.boot>
         <version.org.springframework.cloud>Camden.SR3</version.org.springframework.cloud>
         <version.com.fasterxml.jackson>2.8.5</version.com.fasterxml.jackson>
+        <version.com.alibaba.fastjson>1.2.22</version.com.alibaba.fastjson>
         <!--plugs-->
     </properties>
 

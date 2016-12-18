@@ -1,0 +1,14 @@
+#记得要设置本目录为资源配置目录
+
+#TODO bootstrap.yml文件先于application.yml
+#TODO 获取配置的信息一定要配在bootstrap.yml,获取配置服务信息
+spring:
+  cloud:
+    config:
+      name: system
+      discovery:
+        enabled: true
+        service-id: springcloud-config-server
+      profile: development
+      username: user
+      password: 123456
