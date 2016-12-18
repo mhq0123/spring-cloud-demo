@@ -1,5 +1,4 @@
 #记得要设置本目录为资源配置目录
-
 server:
   port: 8761
 
@@ -25,3 +24,6 @@ eureka:
 endpoints:
   shutdown:
     enabled: true
+
+logging:
+  config: classpath:logback.xml

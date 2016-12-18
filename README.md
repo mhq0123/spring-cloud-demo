@@ -12,7 +12,7 @@ spring-cloud-demo
 7.  springcloud-hystrix                  服务熔断器
 8.  springcloud-eureka-server            服务注册中心
 9.  springcloud-ribbon-consumer          客户端负载均衡（推荐feign）
-11. springcloud-feign-consumer           http客户端,集成ribbon（推荐）
+11. springcloud-feign-consumer           http客户端,集成ribbon,Hystrix（推荐）
 10. springcloud-zuul                     路由网关
 
 ## 辅助模块
