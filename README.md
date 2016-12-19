@@ -11,9 +11,9 @@ spring-cloud-demo
 6.  springcloud-service-external-users   外部用户服务(里面包含了config-client的演示)
 7.  springcloud-hystrix                  服务熔断器
 8.  springcloud-eureka-server            服务注册中心
-9.  springcloud-ribbon-consumer          客户端负载均衡（推荐feign）
-11. springcloud-feign-consumer           http客户端,集成ribbon,Hystrix（推荐）
-10. springcloud-zuul                     路由网关
+9.  springcloud-ribbon-consumer          客户端负载均衡（推荐feign）（里面包含了hystrix的演示）
+11. springcloud-feign-consumer           http客户端,集成ribbon,Hystrix（推荐）（里面包含了hystrix的演示）
+10. springcloud-zuul-gateway             路由网关，权限配置等
 
 ## 辅助模块
 1.  springcloud-security                 安全控制

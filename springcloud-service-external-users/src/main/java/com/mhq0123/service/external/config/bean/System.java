@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  *
  * 配置bean，对应配置仓库的访问规则
  */
-@RefreshScope // 开启刷新功能
+@RefreshScope // 开启支持刷新请求 post /refresh时执行
 @Component // 容器管理
 @ConfigurationProperties(prefix = "system", ignoreUnknownFields = false) // TODO 自动装载配置，prefix要与配置仓库保持一致，字段也要保持一致
 public class System {
