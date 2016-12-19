@@ -19,7 +19,7 @@ eureka:
 logging:
   config: classpath:logback.xml
 
-#路由信息
+#TODO 路由信息,多个节点时自动集成ribbon负载均衡
 zuul:
   routes:
     springcloud-ribbon-consumer:

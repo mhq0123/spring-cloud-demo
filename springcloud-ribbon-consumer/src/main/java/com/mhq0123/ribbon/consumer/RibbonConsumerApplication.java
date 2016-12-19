@@ -18,7 +18,7 @@ import java.nio.charset.Charset;
 @SpringBootApplication
 @EnableDiscoveryClient // 发现服务
 @EnableCircuitBreaker// 开启断路器
-public class RibbonApplication {
+public class RibbonConsumerApplication {
 
     /**
      * 创建负载均衡，所有的消费行为从此获取服务
@@ -43,6 +43,6 @@ public class RibbonApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(RibbonApplication.class, args);
+        SpringApplication.run(RibbonConsumerApplication.class, args);
     }
 }

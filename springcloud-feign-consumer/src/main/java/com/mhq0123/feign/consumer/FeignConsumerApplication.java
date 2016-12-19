@@ -16,7 +16,7 @@ import java.nio.charset.Charset;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients // 开启feign功能
-public class FeignApplication {
+public class FeignConsumerApplication {
 
     // TODO 添加编码过滤器
     @Bean
@@ -31,6 +31,6 @@ public class FeignApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(FeignApplication.class, args);
+        SpringApplication.run(FeignConsumerApplication.class, args);
     }
 }
