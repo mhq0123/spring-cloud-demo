@@ -6,12 +6,19 @@ spring:
   application:
     name: springcloud-service-external-users
 
+#rabbitmq
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: springcloud
+    password: 123456
+
 #注册服务
 eureka:
   client:
     service-url:
       # TODO 注册中心集群
-      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/,http://peer3:8763/eureka/
+      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/,http://peer3:8763/eureka/,http://localhost:8761/eureka/
 
 #日志
 logging:

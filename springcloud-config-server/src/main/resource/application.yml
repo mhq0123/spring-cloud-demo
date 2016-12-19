@@ -30,6 +30,14 @@ spring:
 #              - */local-b/*
 #            uri: file:/home/config-repo/local-b/
 
+#rabbitmq TODO 根据/bus/refresh?destination=springcloud-service-external-users:** 刷新
+# TODO 由于引入bus消息线，故从config-server针对某些服务id发出刷新消息
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: springcloud
+    password: 123456
+
 #开启用户名密码验证
 security:
   user:
@@ -46,3 +54,4 @@ eureka:
 #日志
 logging:
   config: classpath:logback.xml
+
