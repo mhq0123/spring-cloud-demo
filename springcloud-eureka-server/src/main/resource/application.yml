@@ -1,4 +1,10 @@
 #记得要设置本目录为资源配置目录
+#TODO 其中多几点部署添加application-peer...N.yml即可，其中里面的注册地址分别注册并用
+#TODO java -jar springcloud-eureka-server-1.0-SNAPSHOT.jar --spring.profiles.active=peer...N 启动方式
+#TODO 注意各节点的hostname 要修改系统配置映射ip
+#TODO 服务注册时，要写全部注册中心节点
+
+
 server:
   port: 8761
 
@@ -15,8 +21,8 @@ eureka:
     #是否获取注册信息
     fetch-registry: false
     service-url:
-      #注册服务地址
-      default-zone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      #注册服务地址 TODO 只能defaultZone 不能写成default-zone
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
   server:
     #启用自我保护
     enable-self-preservation: true

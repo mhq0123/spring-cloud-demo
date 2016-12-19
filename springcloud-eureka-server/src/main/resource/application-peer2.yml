@@ -1,0 +1,25 @@
+#记得要设置本目录为资源配置目录
+server:
+  port: 8762
+
+spring:
+  application:
+    name: springcloud-eureka-server
+
+eureka:
+  instance:
+    hostname: peer2
+  client:
+    #是否注册自身
+    register-with-eureka: true
+    #是否获取注册信息
+    fetch-registry: true
+    service-url:
+      #注册服务地址
+      defaultZone: http://peer1:8761/eureka/,http://peer3:8763/eureka/
+  server:
+    #启用自我保护
+    enable-self-preservation: true
+
+logging:
+  config: classpath:logback-peer2.xml
