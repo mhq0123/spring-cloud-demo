@@ -32,6 +32,8 @@ spring:
 
 #rabbitmq TODO 根据/bus/refresh?destination=springcloud-service-external-users:** 刷新
 # TODO 由于引入bus消息线，故从config-server针对某些服务id发出刷新消息
+# TODO rabbitMQ 默认管理地址http://localhost:15672 guest/guest
+# TODO 引用配置的客户端也要依赖bus-amqp及mq配置
   rabbitmq:
     host: localhost
     port: 5672

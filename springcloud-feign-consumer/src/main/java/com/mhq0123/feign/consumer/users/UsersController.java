@@ -5,10 +5,7 @@ import com.mhq0123.feign.consumer.users.client.InternalUsersServiceClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * Created by mhq0123 on 2016/12/17.
@@ -32,7 +29,9 @@ public class UsersController {
      * @param userId
      * @return
      */
-    @RequestMapping(value = "/selectUserByUserId", method = RequestMethod.GET)
+    // TODO 效果一样
+    // @RequestMapping(value = "/selectUserByUserId", method = RequestMethod.GET)
+    @GetMapping("/selectUserByUserId")
     public String selectUserByUserId(@RequestParam("userType") String userType, @RequestParam("userId") String userId) {
 
         logger.info(">>>>>>>>>>>>---userType:{},userId:{}----<<<<<<<<<<", userType, userId);
