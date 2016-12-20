@@ -30,7 +30,7 @@ spring:
 #              - */local-b/*
 #            uri: file:/home/config-repo/local-b/
 
-#rabbitmq TODO 根据/bus/refresh?destination=springcloud-service-external-users:** 刷新
+#rabbitmq TODO 根据/bus/refresh?destination=springcloud-service-external-users:** 刷新  可以结合github的Webhooks事件自动执行
 # TODO 由于引入bus消息线，故从config-server针对某些服务id发出刷新消息
 # TODO rabbitMQ 默认管理地址http://localhost:15672 guest/guest
 # TODO 引用配置的客户端也要依赖bus-amqp及mq配置
